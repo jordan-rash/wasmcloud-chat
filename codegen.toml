@@ -1,0 +1,18 @@
+[[models]]
+path = "."
+files = [
+    "chat.smithy",
+]
+
+[[models]]
+path = "../../interfaces/core"
+#url = "https://wasmcloud.github.io/interfaces/idl/org.wasmcloud"
+files = [ "wasmcloud-core.smithy", "wasmcloud-model.smithy" ]
+
+[tinygo]
+output_dir = "interface"
+formatter = [ "goimports", "-w" ]
+files = [
+    { path = "chat.go", package="chat", namespace = "org.jordanrash.chat" },
+]
+

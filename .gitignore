@@ -1,0 +1,4 @@
+go.work
+chat-provider/dist
+chat-provider/build.sh
+chat-actor/build/
